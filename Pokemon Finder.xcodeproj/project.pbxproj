@@ -13,6 +13,7 @@
 		BF0C04141DACC3D000B58F61 /* GFGeoHash.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0C040D1DACC3D000B58F61 /* GFGeoHash.m */; };
 		BF0C04151DACC3D000B58F61 /* GFGeoHashQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0C040F1DACC3D000B58F61 /* GFGeoHashQuery.m */; };
 		BF0C04161DACC3D000B58F61 /* GFQuery.m in Sources */ = {isa = PBXBuildFile; fileRef = BF0C04111DACC3D000B58F61 /* GFQuery.m */; };
+		BF0C041C1DACD32200B58F61 /* PokeAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0C041B1DACD32200B58F61 /* PokeAnnotation.swift */; };
 		BF22AF8D1DACA11100226080 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BF22AF8C1DACA11100226080 /* GoogleService-Info.plist */; };
 		BFEC931C1DAC9FC500712AAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEC931B1DAC9FC500712AAB /* AppDelegate.swift */; };
 		BFEC931E1DAC9FC500712AAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFEC931D1DAC9FC500712AAB /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 		BF0C04101DACC3D000B58F61 /* GFQuery+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GFQuery+Private.h"; sourceTree = "<group>"; };
 		BF0C04111DACC3D000B58F61 /* GFQuery.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GFQuery.m; sourceTree = "<group>"; };
 		BF0C04171DACC53800B58F61 /* PokemonFinder-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PokemonFinder-Bridging-Header.h"; sourceTree = "<group>"; };
+		BF0C041B1DACD32200B58F61 /* PokeAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PokeAnnotation.swift; sourceTree = "<group>"; };
 		BF22AF8C1DACA11100226080 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		BFEC93181DAC9FC500712AAB /* Pokemon Finder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pokemon Finder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFEC931B1DAC9FC500712AAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +111,22 @@
 			path = Implementation;
 			sourceTree = "<group>";
 		};
+		BF0C04191DACD2AA00B58F61 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BF0C041B1DACD32200B58F61 /* PokeAnnotation.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		BF0C041A1DACD2B400B58F61 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BFEC931D1DAC9FC500712AAB /* ViewController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		BFEC930F1DAC9FC500712AAB = {
 			isa = PBXGroup;
 			children = (
@@ -130,15 +148,16 @@
 		BFEC931A1DAC9FC500712AAB /* Pokemon Finder */ = {
 			isa = PBXGroup;
 			children = (
+				BF0C04191DACD2AA00B58F61 /* Model */,
+				BF0C041A1DACD2B400B58F61 /* Controller */,
 				BF0C04001DACC3D000B58F61 /* GeoFire */,
-				BF22AF8C1DACA11100226080 /* GoogleService-Info.plist */,
 				BFEC931B1DAC9FC500712AAB /* AppDelegate.swift */,
-				BFEC931D1DAC9FC500712AAB /* ViewController.swift */,
-				BFEC931F1DAC9FC500712AAB /* Main.storyboard */,
+				BF0C04171DACC53800B58F61 /* PokemonFinder-Bridging-Header.h */,
+				BF22AF8C1DACA11100226080 /* GoogleService-Info.plist */,
+				BFEC93271DAC9FC500712AAB /* Info.plist */,
 				BFEC93221DAC9FC500712AAB /* Assets.xcassets */,
 				BFEC93241DAC9FC500712AAB /* LaunchScreen.storyboard */,
-				BFEC93271DAC9FC500712AAB /* Info.plist */,
-				BF0C04171DACC53800B58F61 /* PokemonFinder-Bridging-Header.h */,
+				BFEC931F1DAC9FC500712AAB /* Main.storyboard */,
 			);
 			path = "Pokemon Finder";
 			sourceTree = "<group>";
@@ -278,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF0C04131DACC3D000B58F61 /* GFBase32Utils.m in Sources */,
+				BF0C041C1DACD32200B58F61 /* PokeAnnotation.swift in Sources */,
 				BFEC931E1DAC9FC500712AAB /* ViewController.swift in Sources */,
 				BF0C04141DACC3D000B58F61 /* GFGeoHash.m in Sources */,
 				BFEC931C1DAC9FC500712AAB /* AppDelegate.swift in Sources */,
